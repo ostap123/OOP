@@ -1,0 +1,29 @@
+//File name: SimpleRobot.java
+
+interface SimpleRobot{
+  int weight;
+  String color;
+  int speed;
+  public void ride();
+  public void clean();
+}
+
+//File name : CofeeRobot.java
+
+public class CofeeRobot implements SimpleRobot{
+   public void ride(){
+    System.out.println("Riding");
+  }
+  public void clean(){
+    System.out.println("Cleaning");
+  }
+  public void makeCofee(){
+    System.out.println("Making cofee");
+  }
+  public static void main(String[] args){
+     CofeeRobot r = new CofeeRobot();
+     r.ride();
+     r.clean();
+     r.makeCofee();
+  }
+}
