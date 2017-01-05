@@ -8,13 +8,13 @@ public class Human{
   private String surname;
   private int age;
 
-public String getName{
+public String getName(){
   return name; 
 }
-public String getSurname{
+public String getSurname(){
   return surname;
 }
-public int getAge{
+public int getAge(){
   return age;
 }
 public void setName(String name){
@@ -28,4 +28,14 @@ public void setAge(int age){
 }
 }
 
-//File name: 
+//File name: Access.java
+
+public class Access{
+  public static void main(String [] args){
+  Human human=new Human();
+  human.setName("Ostap  ");
+  human.setSurname("Shevchenko  ");
+  human.setAge(21);
+  
+  System.out.println("Dear,  "+human.getName()+human.getSurname()"your age is  "+ human.getAge+", you can buy this product" )
+}
