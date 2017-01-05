@@ -10,7 +10,7 @@ class BusDriver extends Employee{
   public static void main(String args[]){  
    Programmer p=new Programmer();
    BusDriver b=new BusDriver();
-   System.out.println("Programmer salary is:"+ (p.salary + p.bonus));  
-   System.out.println("Busdriver salary is:"+ (b.salary + b.reward));
+   System.out.println("Programmer salary is:"+ (p.salary + p.bonus)+" $ ");  
+   System.out.println("Busdriver salary is:"+ (b.salary + b.reward)" $ ");
 }  
 }
