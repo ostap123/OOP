@@ -1,1 +1,25 @@
 
+class Bmw{
+ int maxSpeed(){return 0;}
+}
+
+class X5 extends Bmw{
+int maxSpeed(){return 220;}
+}
+
+class X6 extends Bmw{
+int maxSpeed(){return  300;}
+}
+class X3 extends Bmw{
+int maxSpeed(){return 170;}
+}
+class Test{
+public static void main(String[] args){
+Bmw x5=new X5();
+Bmw x6=new X6();
+Bmw x3=new X3();
+System.out.println("Maximum speed BMW X5 is  "+ x5.maxSpeed());
+System.out.println("Maximum speed BMW X6 is  "+ x6.maxSpeed());
+System.out.println("Maximum spedd BMW X3 is  "+ x3.maxSpeed());
+}
+}
